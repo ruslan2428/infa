@@ -1,4 +1,4 @@
-#include "space.h"
+#include "astandgal.h"
 #include <iostream>
 
 Planet::Planet(const std::string& planetName) : name(planetName) {}
