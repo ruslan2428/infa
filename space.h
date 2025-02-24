@@ -33,6 +33,7 @@ private:
 public:
     Spaceship(const std::string& shipName);
     std::string getName() const override;
+    void exploreGalaxy(const class Galaxy& galaxy) const;
 };
 
 
