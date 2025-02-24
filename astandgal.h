@@ -16,14 +16,6 @@ public:
     void impactByAsteroid(const std::string& asteroidName) const;
 };
 
-class Star : public CosmicObject {
-private:
-    std::string name;
-public:
-    Star(const std::string& starName);
-    std::string getName() const override;
-};
-
 class Spaceship : public CosmicObject {
 private:
     std::string name;
@@ -49,15 +41,4 @@ public:
     Galaxy(const std::string& galaxyName);
     std::string getName() const override;
     void receiveAsteroid(const Asteroid& asteroid);
-};
-
-class Spaceport {
-public:
-    class Rocket {
-    private:
-        std::string name;
-    public:
-        Rocket(const std::string& rocketName);
-        void launchToPlanet(const Planet& planet) const;
-    };
 };
