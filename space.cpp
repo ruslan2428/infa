@@ -8,6 +8,10 @@ std::string Planet::getName() const {
     return name;
 }
 
+void Planet::impactByAsteroid(const std::string& asteroidName) const {
+    std::cout << "Planet " << name << " has been impacted by asteroid " << asteroidName << "!" << std::endl;
+}
+
 
 Star::Star(const std::string& starName) : name(starName) {}
 
@@ -20,6 +24,10 @@ Spaceship::Spaceship(const std::string& shipName) : name(shipName) {}
 
 std::string Spaceship::getName() const {
     return name;
+}
+
+void Spaceship::exploreGalaxy(const Galaxy& galaxy) const {
+    std::cout << "Spaceship " << name << " is exploring the galaxy " << galaxy.getName() << "!" << std::endl;
 }
 
 
