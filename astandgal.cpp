@@ -1,14 +1,6 @@
 #include "astandgal.h"
 #include <iostream>
 
-void Planet::impactByAsteroid(const std::string& asteroidName) const {
-    std::cout << "Planet " << name << " has been impacted by asteroid " << asteroidName << "!" << std::endl;
-}
-
-void Spaceship::exploreGalaxy(const Galaxy& galaxy) const {
-    std::cout << "Spaceship " << name << " is exploring the galaxy " << galaxy.getName() << "!" << std::endl;
-}
-
 Asteroid::Asteroid(const std::string& asteroidName) : name(asteroidName) {}
 
 std::string Asteroid::getName() const {
