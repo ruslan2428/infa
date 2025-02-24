@@ -14,6 +14,7 @@ public:
     Planet(const std::string& planetName);
     std::string getName() const override;
     virtual ~Planet() {}
+    void impactByAsteroid(const std::string& asteroidName) const;
 };
 
 
