@@ -1,4 +1,5 @@
 #include "astandgal.h"
+#include "space.h"
 
 int main() {
     Planet earth("Earth");
@@ -6,8 +7,6 @@ int main() {
     Spaceship voyager("Voyager");
     Asteroid apophis("Apophis");
     Galaxy milkyWay("Milky Way");
-
-    voyager.exploreGalaxy(milkyWay); // spaceship explores galaxy
 
     milkyWay.receiveAsteroid(apophis); // galaxy receives asteroid
     earth.impactByAsteroid(apophis.getName()); // planet impacted by asteroid
