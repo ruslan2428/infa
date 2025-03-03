@@ -17,4 +17,3 @@ void Galaxy::receiveAsteroid(const Asteroid& asteroid) {
     asteroids.push_back(asteroid);
     std::cout << "Galaxy " << name << " has received asteroid " << asteroid.getName() << "!" << std::endl;
 }
-
