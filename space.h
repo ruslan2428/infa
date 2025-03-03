@@ -1,6 +1,10 @@
+#ifndef SPACE_H
+#define SPACE_H
 
 #include <string>
 
+//forward declaration of Galaxy
+//class Galaxy;
 
 class CosmicObject {
 public:
@@ -33,7 +37,6 @@ private:
 public:
     Spaceship(const std::string& shipName);
     std::string getName() const override;
-    void exploreGalaxy(const class Galaxy& galaxy) const;
 };
 
 
@@ -47,5 +50,7 @@ public:
         void launchToPlanet(const Planet& planet) const;
     };
 };
+
+#endif // SPACE_H
 
 
