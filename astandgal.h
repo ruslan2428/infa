@@ -1,5 +1,9 @@
+#ifndef ASTANDGAL_H
+#define ASTANDGAL_H
+
 #include <string>
 #include <vector>
+#include "space.h" // to use cosmicobject
 
 class Asteroid : public CosmicObject {
 private:
@@ -18,3 +22,5 @@ public:
     std::string getName() const override;
     void receiveAsteroid(const Asteroid& asteroid);
 };
+
+#endif //ASTANDGAL_H
